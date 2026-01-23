@@ -306,7 +306,7 @@ Transform:
   m_GameObject: {fileID: 1450591348}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.32, y: 0.29, z: -10}
+  m_LocalPosition: {x: -10.92, y: -2.66, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -335,6 +335,7 @@ GameObject:
   - component: {fileID: 1613460116}
   - component: {fileID: 1613460115}
   - component: {fileID: 1613460117}
+  - component: {fileID: 1613460118}
   m_Layer: 0
   m_Name: Short-Lazer-Ship
   m_TagString: Untagged
@@ -403,8 +404,8 @@ Transform:
   m_GameObject: {fileID: 1613460114}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.55252385, y: -1.7529564, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: -10.77, y: -5.38, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 782515878}
@@ -422,6 +423,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 035e4abefe4352249a8cdd40011da26d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1613460118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613460114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4339d990ae95950408ee2ab2e7105030, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefabs: {fileID: 2640301315025564002, guid: a5abccbc6f1ef0b4c9de9c58c58a0a14,
+    type: 3}
+  shootingInterval: 0.1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
