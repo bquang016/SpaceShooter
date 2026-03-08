@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
+using System; // Thêm thư viện này để dùng Action
 
 public class Health : MonoBehaviour
 {
-    public GameObject explosionPrefab; // Prefab nổ
-    public int defaultHealthPoint = 3; // Máu mặc định
+    public GameObject explosionPrefab;
+    public int defaultHealthPoint = 3;
     private int healthPoint;
+
+    public Action onDead; // Bổ sung biến sự kiện [cite: 1636]
 
     private void Start() => healthPoint = defaultHealthPoint;
 
@@ -17,12 +20,13 @@ public class Health : MonoBehaviour
 
     protected virtual void Die()
     {
-        // Tạo hiệu ứng nổ nếu có
         if (explosionPrefab != null)
         {
             var explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
             Destroy(explosion, 1f);
         }
         Destroy(gameObject);
+
+        onDead?.Invoke(); // Gọi sự kiện khi chết [cite: 1642]
     }
 }
