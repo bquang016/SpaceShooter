@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: -224580889611290426}
   - component: {fileID: 406277741320495812}
   - component: {fileID: 8141245909354436661}
+  - component: {fileID: -6943977942080843196}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
@@ -266,6 +267,20 @@ MonoBehaviour:
     type: 3}
   defaultHealthPoint: 3
   healthPoint: 0
+--- !u!114 &-6943977942080843196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6335332752049884956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d149b0c4cad71224082ade38082fd5c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flyPath: {fileID: 0}
+  flySpeed: 2
 --- !u!1 &7469693538879106809
 GameObject:
   m_ObjectHideFlags: 0
